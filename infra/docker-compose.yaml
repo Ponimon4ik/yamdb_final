@@ -9,6 +9,7 @@ services:
       - ./.env
   web:
     image: ponimon4ik/yamdb_final:latest
+    container_name: web
     restart: always
     volumes:
       - static_value:/app/static/
@@ -26,6 +27,8 @@ services:
       - static_value:/var/html/static/
       - media_value:/var/html/media/
     depends_on:
+      - web
+    links:
       - web
 volumes:
   static_value:
