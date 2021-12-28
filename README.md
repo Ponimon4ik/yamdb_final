@@ -71,4 +71,7 @@ docker-compose exec web python manage.py loaddata fixtures.json
 
 + Стефанюк Богдан
 
+### Ссылка на проект:
+[Yamdb_final](http://51.250.4.172:80/admin/)
+
 ![Yamdb_workflow](https://github.com/Ponimon4ik/yamdb_final/workflows/Yamdb_workflow/badge.svg)
